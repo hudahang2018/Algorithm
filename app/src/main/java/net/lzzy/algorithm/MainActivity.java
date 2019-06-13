@@ -76,7 +76,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     //todo:直接插入排序
 private void insertSort(){
     //i 当前的位置大于等于有序区中的所有值然后排序结束，进行下一趟排序，i 位置的前面为有序区
-    //i 当前位置里的数值和前一个进行比较，如果 i 值小于有序区中的数值时，
+    // i 当前位置里的数值和前一个进行比较，如果 i 值小于有序区中的数值时，
     //  则i被放到监视哨 R0 中，然后以 j 为扫描指针，有序区最大数值往 i 的位置移动，在有序区寻找 i 的合适位置
     ////R0 中的数值大于 j 中的数值时则把 R0 中的数值放到 j+1 中的位置，
     for(int i=1;i<items.length;i++){
