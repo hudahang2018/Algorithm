@@ -4,7 +4,7 @@ import java.util.Comparator;
 
 /**
  * Created by lzzy_gxy on 2019/6/13.
- * Description:
+ * Description:插入排序
  */
 public class InsertSort<T extends Comparable<? super T>> extends BaseSort<T> {
     InsertSort(T[] items) {

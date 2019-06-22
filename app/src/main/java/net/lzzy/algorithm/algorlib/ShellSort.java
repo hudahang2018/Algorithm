@@ -4,7 +4,7 @@ import java.util.Comparator;
 
 /**
  * Created by lzzy_gxy on 2019/6/20.
- * Description:
+ * Description:希尔排序
  */
 public class ShellSort <T extends Comparable<? super T>> extends BaseSort<T>{
     ShellSort(T[] items){

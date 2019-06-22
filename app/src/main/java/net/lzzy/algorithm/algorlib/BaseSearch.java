@@ -2,13 +2,13 @@ package net.lzzy.algorithm.algorlib;
 
 /**
  * Created by lzzy_gxy on 2019/6/22.
- * Description:
+ * Description:查找
  */
 public abstract class BaseSearch<T extends Comparable<? super T>> {
     //region 1.field字段   最小权限原则
 
     T[] items;
-    private long duration;
+    long duration;
     private int compareCount;
     private int swapCount;
     int moveStep;
