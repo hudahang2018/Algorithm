@@ -25,10 +25,10 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
         <Spinner
-            android:id="@+id/activity_main_sp"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"/>
+        android:id="@+id/activity_main_sp"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"/>
 
         <Button
             android:id="@+id/activity_main_btn_generate"
@@ -43,4 +43,31 @@
             android:layout_height="wrap_content"
             android:text="排序"/>
     </LinearLayout>
+    <LinearLayout
+        android:id="@+id/activity_main_xianshi"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Spinner
+            android:id="@+id/activity_main_sp1"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/activity_main_bt_chazhao"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:text="生成查找数组"/>
+
+    </LinearLayout>
+
+
 </LinearLayout>

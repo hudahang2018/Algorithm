@@ -4,13 +4,23 @@ package net.lzzy.algorithm.algorlib;
  * Created by lzzy_gxy on 2019/6/22.
  * Description:
  */
-public class DirectSearch<T extends Comparable<? super T>>extends BaseSearch {
+public class DirectSearch<T extends Comparable<? super T>>extends BaseSearch<T> {
     DirectSearch(T[] items){
         super(items);
     }
 
     @Override
-    int search(Comparable key) {
-        return 0;
+     public int search(T key) {
+        int pos=0;
+        long start=System.currentTimeMillis();
+        for (T item : items){
+            if (equal(item,key)){
+                setDuration(System.currentTimeMillis()-start);
+                return pos;
+            }
+            pos++;
+        }
+        setDuration(System.currentTimeMillis()-start);
+        return -1;
     }
 }

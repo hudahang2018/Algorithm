@@ -14,6 +14,10 @@ public abstract class BaseSearch<T extends Comparable<? super T>> {
     int moveStep;
     //endregion
 
+    BaseSearch(){
+
+    }
+
     BaseSearch(T[] items) {
         this.items = items;
         compareCount = 0;
@@ -31,7 +35,7 @@ public abstract class BaseSearch<T extends Comparable<? super T>> {
         return a.compareTo(b);
     }
 
-    abstract int search(T key);
+    public abstract int search(T key);
 
 
     public long getDuration() {
